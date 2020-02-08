@@ -97,4 +97,60 @@ class DetailControllerTests: XCTestCase
         
         sut.tableView(sut.tableView, didSelectRowAt: testIndexPath)
     }
+    
+    // cheating by using detail view controller which
+    // within this demo project loads a UIImageView; I'm lazy!
+    func testSelectingImageJpegDataWithHalfCompressionQualityIs10MBStill()
+    {
+        let detail = DetailViewController()
+        
+        // image is 10.3 MB about 10,399,744 bytes!
+        detail.selectedImage = "norfolk1892.jpg"
+        detail.loadViewIfNeeded()
+        
+        guard let image = detail.imageView.image else {
+            XCTFail("Could not extract image from UIImageView.")
+            return
+        }
+        
+        // do not run jpegData(compressionQuality:) on main queue
+        let jpegData = image.jpegData(compressionQuality: 0.5)
+        
+        guard let size = jpegData?.count else {
+            XCTFail("Could not extract image's size from data.")
+            return
+        }
+        
+        let mbSize = CGFloat(size) / 1000.0 / 1024.0
+        
+        XCTAssertTrue(mbSize > 10)
+    }
+    
+    // probably a bad test name; cheating by using detail view controller which
+    // within this demo project loads a UIImageView; I'm lazy!
+    func testConvertingImageFromPNGToJPEGWorks()
+    {
+        let detail = DetailViewController()
+        
+        // image is 10.3 MB about 10,399,744 bytes!
+        detail.selectedImage = "patchogue1906.png"
+        detail.loadViewIfNeeded()
+        
+        guard let image = detail.imageView.image else {
+            XCTFail("Could not extract image from UIImageView.")
+            return
+        }
+        
+        // do not run jpegData(compressionQuality:) on main queue
+        let jpegData = image.jpegData(compressionQuality: 0.5)
+        
+        guard let size = jpegData?.count else {
+            XCTFail("Could not extract image's size from data.")
+            return
+        }
+        
+        let mbSize = CGFloat(size) / 1000.0 / 1024.0
+        
+        XCTAssertTrue(mbSize > 0.29)
+    }
 }

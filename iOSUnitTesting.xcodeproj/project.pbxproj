@@ -27,6 +27,8 @@
 		71A75CBF23EE1F6F00049C86 /* DetailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A75CBE23EE1F6F00049C86 /* DetailControllerTests.swift */; };
 		71A75CC123EE1FD200049C86 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A75CC023EE1FD200049C86 /* DetailViewController.swift */; };
 		71A75CC323EE271C00049C86 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A75CC223EE271C00049C86 /* MainCoordinator.swift */; };
+		71A75CC523EE333C00049C86 /* norfolk1892.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71A75CC423EE333C00049C86 /* norfolk1892.jpg */; };
+		71A75CC723EE351F00049C86 /* patchogue1906.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A75CC623EE351F00049C86 /* patchogue1906.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		71A75CBE23EE1F6F00049C86 /* DetailControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailControllerTests.swift; path = iOSUnitTestingTests/DetailControllerTests.swift; sourceTree = SOURCE_ROOT; };
 		71A75CC023EE1FD200049C86 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		71A75CC223EE271C00049C86 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		71A75CC423EE333C00049C86 /* norfolk1892.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = norfolk1892.jpg; sourceTree = "<group>"; };
+		71A75CC623EE351F00049C86 /* patchogue1906.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patchogue1906.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		7182B13723EDF9F500E38D5C /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				71A75CC623EE351F00049C86 /* patchogue1906.png */,
+				71A75CC423EE333C00049C86 /* norfolk1892.jpg */,
 				7182B13823EDF9F500E38D5C /* nssl0049.jpg */,
 				7182B13923EDF9F500E38D5C /* nssl0046.jpg */,
 				7182B13A23EDF9F500E38D5C /* nssl0091.jpg */,
@@ -233,6 +239,8 @@
 				7182B14623EDF9F500E38D5C /* nssl0051.jpg in Resources */,
 				7182B14423EDF9F500E38D5C /* nssl0091.jpg in Resources */,
 				7182B14923EDF9F500E38D5C /* nssl0043.jpg in Resources */,
+				71A75CC523EE333C00049C86 /* norfolk1892.jpg in Resources */,
+				71A75CC723EE351F00049C86 /* patchogue1906.png in Resources */,
 				7182B14B23EDF9F500E38D5C /* nssl0034.jpg in Resources */,
 				7182B14223EDF9F500E38D5C /* nssl0049.jpg in Resources */,
 				7182B14723EDF9F500E38D5C /* nssl0041.jpg in Resources */,
